@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.container {
+  z-index: 500;
+  position: relative;
+}
+
+/** FONTS **/
+@font-face {
+  font-family: "Tan Buster";
+  src: url("../fonts/TAN-BUSTER.woff2") format("woff2"), url("../fonts/TAN-BUSTER.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2 {
+  font-family: "Tan Buster", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background-color: #ece7e1;
+  color: #1a1818;
+}
+
+/* Styles pour le header */
+.header {
+  z-index: 600;
+  width: 6%;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 30px;
+  display: flex;
+  position: fixed;
+}
+.header_nav-item {
+  flex: 0 auto;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 15px;
+  transform: rotate(-90deg);
+}
+.header_nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #1a1818;
+}
+.header_nav-line {
+  width: 1px;
+  height: 100px;
+  background-color: #1a1818;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.nav-copyright {
+  position: absolute;
+  top: auto;
+  bottom: 3vh;
+  left: 0%;
+  right: 0%;
+}
+
+.copyright {
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.main {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 5%;
+  position: relative;
+}
+.main_left {
+  width: 16%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: fixed;
+}
+.main_left-ctn {
+  margin-left: -25%;
+  padding-top: 90%;
+}
+.main_left-ttl {
+  margin-bottom: 2vh;
+  padding-top: 5%;
+}
+.main_left-ttl h1 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main_right {
+  width: 65%;
+  height: 90vh;
+  float: right;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  text-align: center;
+  flex-direction: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  display: flex;
+  position: relative;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+#site-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#site-navigation ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Tan Buster";
+  color: #1A1818;
+  font-size: 120px;
+}/*# sourceMappingURL=main.css.map */
