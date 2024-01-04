@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 30px;
     display: flex;
     position: fixed;
@@ -25,6 +25,20 @@
                 letter-spacing: 4px;
                 color: #1a1818;
             }
+            &-custom {
+                flex: 0 auto;
+                margin-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 15px;
+                transform: rotate(-90deg);
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    letter-spacing: 4px;
+                    color: #ece7e1;
+                }
+            }
         }
 
         &-line {
@@ -33,6 +47,13 @@
             background-color: #1a1818;
             margin-top: 10px;
             margin-bottom: 80px;
+            &-custom {
+                width: 1px;
+                height: 100px;
+                background-color: #ece7e1;
+                margin-top: 10px;
+                margin-bottom: 80px;
+            }
         }
     }
 }

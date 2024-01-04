@@ -11,3 +11,9 @@ function register_my_menus() {
     ) );
 }
 add_action( 'after_setup_theme', 'register_my_menus' );
+
+// Inclure le fichier pour la déclaration des blocs ACF
+require_once get_template_directory() . '/includes/add-gutenberg-acf.php';
+
+require_once get_template_directory() . '/includes/add-custom-post-type.php';
+
