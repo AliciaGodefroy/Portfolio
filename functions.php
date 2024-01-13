@@ -17,3 +17,10 @@ require_once get_template_directory() . '/includes/add-gutenberg-acf.php';
 
 require_once get_template_directory() . '/includes/add-custom-post-type.php';
 
+// Blocs ACF
+
+function portfolio_register_acf_blocks() {
+    register_block_type( __DIR__ . '/template-parts/bloc-parts/b-form/block.json' );
+}
+// Here we call our portfolio_register_acf_block() function on init.
+add_action( 'init', 'portfolio_register_acf_blocks' );

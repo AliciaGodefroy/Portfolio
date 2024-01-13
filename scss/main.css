@@ -42,10 +42,10 @@ body.black-template {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 2%;
   padding-bottom: 30px;
   display: flex;
   position: fixed;
+  top: 5rem;
 }
 .header_nav-item {
   flex: 0 auto;
@@ -174,6 +174,7 @@ body.black-template {
 }
 
 .project_ttl {
+  text-transform: uppercase;
   font-size: 55px;
   padding-top: 2rem;
   margin-bottom: -1rem;
@@ -185,6 +186,7 @@ body.black-template {
 .project_img {
   width: 45rem;
   height: 30rem;
+  margin: 0;
 }
 .project_img img {
   -o-object-fit: cover;
@@ -197,6 +199,7 @@ body.black-template {
 }
 .project_ctn {
   display: flex;
+  align-items: center;
   gap: 3rem;
   margin-bottom: 6rem;
 }
@@ -240,4 +243,111 @@ body.black-template {
      object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.about {
+  position: relative;
+}
+.about_title {
+  text-transform: uppercase;
+  font-size: 55px;
+  padding-top: 5rem;
+}
+.about_wrp {
+  display: flex;
+}
+.about_txt {
+  width: 45%;
+  font-weight: 200;
+}
+.about_image {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  max-height: 450px;
+  top: 6rem;
+  right: 0;
+  width: 60%;
+}
+.about_med {
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(1);
+}
+
+.contact .heading {
+  margin-bottom: 2rem;
+}
+.contact_title {
+  text-transform: uppercase;
+  font-size: 55px;
+  padding-top: 1rem;
+}
+.contact_form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact_form .wpcf7 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  gap: 1rem;
+}
+.contact_form .split {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+.contact_form .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact_form .wrapper span {
+  width: 100%;
+}
+.contact_form input, .contact_form textarea {
+  width: 100%;
+  background: #1a1818;
+  color: #ece7e1;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  border: solid 1px #ece7e1;
+  border-radius: 5px;
+  padding: 10px;
+}
+.contact_form input::-moz-placeholder, .contact_form textarea::-moz-placeholder {
+  font-style: italic;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #ece7e1;
+}
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  font-style: italic;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #ece7e1;
+}
+.contact_form input[type=submit] {
+  text-transform: uppercase;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #ece7e1;
+  color: #1a1818;
+  font-weight: 800;
+  border-radius: 28px;
+  padding: 15px;
+  width: 50%;
+}
+
+.work_title {
+  text-transform: uppercase;
+  font-size: 55px;
+  padding-top: 1rem;
 }/*# sourceMappingURL=main.css.map */

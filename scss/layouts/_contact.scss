@@ -1,0 +1,70 @@
+.contact {
+
+    .heading {
+        margin-bottom: 2rem;
+    }
+
+    &_title {
+        text-transform: uppercase;
+        font-size: 55px;
+        padding-top: 1rem;
+    }
+
+    &_form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .wpcf7 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            gap: 1rem;
+        }
+
+        .split {
+            display: flex;
+            gap: 3rem;
+            width: 100%;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            span {
+                width: 100%;
+            }
+        }
+        input, textarea {
+            width: 100%;
+            background: #1a1818;
+            color: #ece7e1;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            border: solid 1px #ece7e1;
+            border-radius: 5px;
+            padding: 10px;
+            &::placeholder {
+                font-style: italic;
+                font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+                font-weight: 300;
+                color: #ece7e1;
+            }
+        }
+        input[type="submit"] {
+            text-transform: uppercase;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            background-color: #ece7e1;
+            color: #1a1818;
+            font-weight: 800;
+            border-radius: 28px;
+            padding: 15px;
+            width: 50%;
+        }
+    }
+}
