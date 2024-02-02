@@ -2,6 +2,11 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/scss/main.css' );
+    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper@11.0.5/swiper-bundle.min.js', array(), '6.8.4', true);
+    wp_enqueue_style('swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), '6.8.4');
+    wp_enqueue_script('swiper-init', get_stylesheet_directory_uri() . '/swiper-init.js', array(), '1.0', true);
+
+
 }
 
 function register_my_menus() {

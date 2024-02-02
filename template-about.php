@@ -23,4 +23,4 @@ Template Name: Template About
     </section>
 </div>
 
-<?php the_content(); ?>
+<?php get_footer(); ?>

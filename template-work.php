@@ -6,10 +6,10 @@ Template Name: Template Work
 
 <?php get_header('custom'); ?>
 
-<div class="ctn">
+<div class="container">
     <section class="work">
         <div class="heading">
-            <h1 class="project-ttl"><?= get_the_title() ?></h1>
+            <h1 class="work_title"><?= get_the_title()?></h1>
         </div>
     </section>
 
@@ -40,14 +40,11 @@ if ($query->have_posts()) :
             echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr(get_the_title()) . '" />';
           }
           ?>
-          <h2><?php the_title(); ?></h2>
         </div>
       <?php endwhile; ?>
     </div>
     <!-- Ajouter la pagination et les boutons de navigation si nécessaire -->
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
 <?php
   // Restaurer les données de la requête principale
@@ -59,3 +56,4 @@ endif;
 ?>
 </div>
 
+<?php get_footer(); ?>

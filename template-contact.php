@@ -17,4 +17,4 @@ Template Name: Template Contact
     </section>
 </div>
 
-<?php the_content(); ?>
+<?php get_footer(); ?>
