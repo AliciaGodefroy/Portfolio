@@ -2,12 +2,17 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/scss/main.css' );
-    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper@11.0.5/swiper-bundle.min.js', array(), '6.8.4', true);
+    wp_enqueue_style('aos-style', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css', array(), '2.3.4');
     wp_enqueue_style('swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), '6.8.4');
+
+    wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper@11.0.5/swiper-bundle.min.js', array(), '6.8.4', true);
     wp_enqueue_script('swiper-init', get_stylesheet_directory_uri() . '/swiper-init.js', array(), '1.0', true);
-
-
+    wp_enqueue_script('aos-script', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', array('jquery'), '2.3.4', true);
+    wp_enqueue_script('aos-init', get_stylesheet_directory_uri() . '/aos-init.js', array(), '1.0', true);
+    // Activer AOS avec vos options personnalisées
+    wp_add_inline_script('aos-script', 'jQuery(document).ready(function($) { AOS.init({ duration: 800, offset: 120, easing: "ease-in-out", once: true }); });');
 }
+
 
 function register_my_menus() {
     register_nav_menus( array(

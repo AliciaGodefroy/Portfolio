@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="main">
+
     <div class="front-wrapper">
         <section class="main_left">
             <div class="main_left-ctn">
@@ -24,6 +24,6 @@
             </nav>
         </section>
     </div>
-</div>
+
 
 <?php get_footer(); ?>
