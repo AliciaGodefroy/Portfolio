@@ -152,9 +152,9 @@ body.black-template {
 }
 .main_left-ttl h1 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .main_left, .main_right {
   padding: 0 10%;

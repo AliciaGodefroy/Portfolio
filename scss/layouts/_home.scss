@@ -5,9 +5,9 @@
         &-ttl {
             h1 {
                 font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
             }
         }
     }
@@ -45,8 +45,6 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
     .main {
             max-width: 90%;
-            // margin-left: auto;
-            // margin-right: auto;
             margin-left: 10%;
             margin-right: 5%;
             position: relative;
