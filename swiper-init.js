@@ -2,11 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var mySwiper = new Swiper('.swiper-container', {
     autoplay: true,
     loop:true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween:50,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
     },
     on: {
       init: function () {

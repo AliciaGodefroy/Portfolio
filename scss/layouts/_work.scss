@@ -38,3 +38,16 @@
 .swiper-pagination-bullet {
     background: #ece7e1 !important;
 }
+
+@media (max-width: 1200px) {
+    .work {
+
+        &_title {
+            font-size: 35px;
+            padding:0;
+        }
+    }
+    .swiper-container {
+        padding: 0 1rem;
+    }
+}

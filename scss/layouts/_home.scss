@@ -1,6 +1,6 @@
 .main {
     max-width: 100%;
-    padding: 0 10% 10% 10%;
+    // padding: 0 10% 10% 10%;
     &_left {
         &-ttl {
             h1 {
@@ -10,7 +10,9 @@
                 letter-spacing: 2px;
             }
         }
-
+    }
+    &_left, &_right {
+        padding: 0 10%;
     }
 }
 
@@ -32,6 +34,9 @@
                 color: #1A1818;
                 font-size: 13vw;
             }
+            // &:hover {
+            //     animation: mouvement 2s ease infinite; 
+            // }
         }
     }
 }
@@ -40,12 +45,15 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
     .main {
             max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 10%;
-            padding-right: 5%;
+            // margin-left: auto;
+            // margin-right: auto;
+            margin-left: 10%;
+            margin-right: 5%;
             position: relative;
-
+            overflow-x: clip;
+        &_left, &_right {
+            padding: 0;
+        }
         &_left {
             width: 25%;
             height: 100vh;

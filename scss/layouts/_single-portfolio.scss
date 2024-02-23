@@ -75,3 +75,25 @@
         height: 100%;
     }
 }
+
+@media (max-width: 1200px) {
+    .project {
+
+        &_ttl {
+            font-size: 35px;
+            padding:0;
+        }
+        &_ctn {
+            flex-direction: column;
+        }
+        &_img {
+            width: initial;
+            height: initial;
+            padding: 0 1rem;
+        }
+        &_txt {
+            width: initial;
+            padding: 0 2rem;
+        }
+    }
+}
