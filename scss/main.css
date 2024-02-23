@@ -44,6 +44,7 @@ body.black-template {
   position: static;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header_nav-item {
   text-align: center;
@@ -83,15 +84,18 @@ body.black-template {
   width: 100px;
   height: 1px;
   background-color: #1a1818;
-  margin-top: 10px;
-  margin-bottom: 45px;
 }
 .header_nav-line-custom {
   width: 100px;
   height: 1px;
   background-color: #ece7e1;
-  margin-top: 10px;
-  margin-bottom: 45px;
+}
+.header .copyright {
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -111,14 +115,14 @@ body.black-template {
     flex: 0 auto;
     margin-bottom: 40px;
     padding-left: 20px;
-    padding-right: 15px;
+    padding-right: 40px;
     transform: rotate(-90deg);
   }
   .header_nav-item-custom {
     flex: 0 auto;
     margin-bottom: 40px;
     padding-left: 20px;
-    padding-right: 15px;
+    padding-right: 40px;
     transform: rotate(-90deg);
   }
   .header_nav-item-custom a {
@@ -129,6 +133,8 @@ body.black-template {
     color: #ece7e1;
   }
   .header_nav-line, .header_nav-line-custom {
+    margin-top: 10px;
+    margin-bottom: 45px;
     width: 1px;
     height: 100px;
   }
@@ -139,16 +145,12 @@ body.black-template {
     left: 0%;
     right: 0%;
   }
-  .copyright {
-    text-align: center;
-    letter-spacing: 4px;
-    font-family: Montserrat, sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-  }
 }
 .main {
   max-width: 100%;
+}
+.main_left {
+  padding-top: 2rem !important;
 }
 .main_left-ttl h1 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
@@ -334,7 +336,7 @@ body.black-template {
 }
 .about_title {
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 12vw;
   padding-top: 10rem;
   margin-bottom: -1rem;
 }
@@ -371,6 +373,7 @@ body.black-template {
   }
   .about_title {
     padding-top: 5rem;
+    font-size: 4.5vw;
   }
   .about_wrp {
     margin-top: -3rem;
@@ -412,7 +415,7 @@ body.black-template {
 }
 .contact_form .split {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   width: 100%;
 }
 .contact_form .wrapper {
@@ -426,6 +429,7 @@ body.black-template {
 }
 .contact_form input, .contact_form textarea {
   width: 100%;
+  box-sizing: border-box;
   background: #1a1818;
   color: #ece7e1;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -464,10 +468,13 @@ body.black-template {
   .contact_form form {
     width: 49%;
   }
+  .contact .split {
+    gap: 3rem;
+  }
 }
 .work_title {
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 4.5vw;
   padding-top: 1rem;
 }
 
@@ -505,7 +512,7 @@ body.black-template {
 
 @media (max-width: 1200px) {
   .work_title {
-    font-size: 35px;
+    font-size: 12vw;
     padding: 0;
   }
   .swiper-container {
