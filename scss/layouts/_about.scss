@@ -7,7 +7,7 @@
     &_title {
         text-transform: uppercase;
         font-size: 12vw;
-        padding-top: 10rem;
+        padding-top: 30rem;
         margin-bottom: -1rem;
     }
     &_wrp {
@@ -23,15 +23,15 @@
         justify-content: center;
         position: absolute;
         max-height: 450px;
-        top: -4rem;
+        top: 0rem;
         right: 0;
-        width: 60%;
+        width: 100%;
     }
     &_med {
         object-fit: contain;
         filter: grayscale(1);
         width: 100%;
-        opacity: 0.4;
+        opacity: 1;
         z-index: -1;
     }
 }
@@ -43,7 +43,7 @@
             padding: 0;
         }
         &_title {
-            padding-top: 5rem;
+            padding-top: 13rem;
             font-size: 4.5vw;
         }
         &_wrp {
@@ -55,6 +55,7 @@
         }
         &_image {
             top: 6rem;
+            width: 60%;
         }
         &_med {
             opacity: 1;
